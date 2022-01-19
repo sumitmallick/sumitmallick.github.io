@@ -476,3 +476,53 @@ h6 { font-size: 16px;}
   display:inline-block;
   padding-left: 34%;
 }
+
+button[type="submit"] {
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 24px;
+	border-radius: 8px;
+	font-family: "roboto mono", monospace;
+	color: rgb(27, 166, 247);
+	text-align: center;
+	cursor: pointer;
+	margin-top: 10px;
+	transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+	background-color: rgb(214, 226, 236);
+  }
+  #status {
+	width: 90%;
+	max-width: 500px;
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 8px;
+  }
+  #status.success {
+	background-color: rgb(211, 250, 153);
+	animation: status 4s ease forwards;
+  }
+  #status.error {
+	background-color: rgb(250, 129, 92);
+	color: white;
+	animation: status 4s ease forwards;
+  }
+  @keyframes status {
+	0% {
+	  opacity: 1;
+	  pointer-events: all;
+	}
+	90% {
+	  opacity: 1;
+	  pointer-events: all;
+	}
+	100% {
+	  opacity: 0;
+	  pointer-events: none;
+	}
+  }
+  
