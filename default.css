@@ -685,9 +685,14 @@ h6 { font-size: 16px;}
 	margin-top: 30px;
 }
 
+.contact-form-section{
+	padding-right: 20px;
+}
+
 .contact-form-section h4, .coffee-section h4{
 	color: var(--mainText);
 	margin-bottom: 15px;
+	margin-top: 0;
 }
 
 .form-row{
@@ -964,14 +969,12 @@ h6 { font-size: 16px;}
 
 #contact-form{
 	display: block;
-	max-width: 600px;
-	margin: 0 auto;
+	width: 100%;
 	border: 1px solid var(--borderColor);
-	padding: 15px;
-	border-radius: 5px;
-	background-color: var(--mainColor);
-	margin-bottom: 50px;
-
+	padding: 20px;
+	border-radius: 8px;
+	background-color: var(--previewBg);
+	box-sizing: border-box;
 }
 
 #contact-form label{
